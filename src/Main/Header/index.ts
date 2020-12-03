@@ -1,0 +1,1 @@
+export {HeaderComponent as default} from './Header';

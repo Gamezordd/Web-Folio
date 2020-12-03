@@ -1,0 +1,18 @@
+.header-image{
+    border-radius: 50% 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #950750;
+    width: 90%;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .image-wrapper{
+        padding-top: 1rem;
+    }
+}
+
+.hi-icon{
+    transform: translate(100%, 50%);
+}

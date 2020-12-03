@@ -1,0 +1,1 @@
+export {Exp as default} from './ExpComponent';

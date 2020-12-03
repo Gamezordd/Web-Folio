@@ -1,0 +1,1 @@
+export {ProjectComponent as default} from './Projects'
