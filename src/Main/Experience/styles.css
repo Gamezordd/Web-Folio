@@ -40,12 +40,13 @@
 }
 .custom-timeline::before{
     top: auto;
-    height: 50%;
+    height: 63%;
 }
 
 .vertical-timeline-element-content{
     box-shadow: 0px 0px;
     padding-bottom: 0.1rem;
+    cursor: pointer;
 }
 
 .pf-loading-text{

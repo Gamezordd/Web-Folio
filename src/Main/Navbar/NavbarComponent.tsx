@@ -35,7 +35,7 @@ export const NavbarComponent = (props: any) => {
                     <NavDropdown.Item onClick={() => {window.open('https://1drv.ms/b/s!Akkr1QYilOQMicl_cFCz16x1wC_Gdg?e=Vd4cOc')}}>View Resume</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => setControl({...control, contactModal: true})}>Say Something</NavDropdown.Item>
                     <NavDropdown.Divider style={{backgroundColor: '#00000030'}} />
-                    <NavDropdown.Item className='ver-num'><p>v0.1</p></NavDropdown.Item>
+                    <NavDropdown.Item className='ver-num'><p>v0.1.1</p></NavDropdown.Item>
                 </NavDropdown>
             </Navbar>
             {ContactModal()}

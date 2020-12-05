@@ -15,9 +15,7 @@ export const HitCounter = (props: IProps) =>{
     
     useEffect(() => {
         watcher = firebase.attachHitsWatcher();
-        watcher.on('value', ss => {
-            console.log("we");
-            
+        watcher.on('value', ss => {            
             setHits(ss.val());
             setLoading(false);
         });

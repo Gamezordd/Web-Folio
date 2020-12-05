@@ -41,7 +41,7 @@ export const Exp = () => {
                         onTimelineElementClick={() => {if(exp[e]?.link) {window.open(`${exp[e].link}`)}}}
                     >
                         {exp[e]?.link ? <u><h6>{e}</h6></u> : <h6>{e}</h6>}
-                        <p style={{fontSize: '0.8rem'}}>
+                        <p style={{fontSize: '0.8rem', color: exp[e].fontColor}}>
                             {exp[e].description}
                         </p>
                     </VerticalTimelineElement>
@@ -66,7 +66,7 @@ export const Exp = () => {
                     >
                         {edu[e]?.link ? <u><h6>{e}</h6></u> : <h6>{e}</h6>}
                         
-                        <p style={{fontSize: '0.8rem'}}>
+                        <p style={{fontSize: '0.8rem', color: edu[e].fontColor}}>
                             {edu[e].description}
                         </p>
                     </VerticalTimelineElement>
