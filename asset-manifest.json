@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/web-folio/static/css/main.193fa048.chunk.css",
-    "main.js": "/web-folio/static/js/main.e7f8b81e.chunk.js",
-    "main.js.map": "/web-folio/static/js/main.e7f8b81e.chunk.js.map",
+    "main.css": "/web-folio/static/css/main.57409004.chunk.css",
+    "main.js": "/web-folio/static/js/main.d75d280a.chunk.js",
+    "main.js.map": "/web-folio/static/js/main.d75d280a.chunk.js.map",
     "runtime-main.js": "/web-folio/static/js/runtime-main.b45694b9.js",
     "runtime-main.js.map": "/web-folio/static/js/runtime-main.b45694b9.js.map",
     "static/css/2.1829e39b.chunk.css": "/web-folio/static/css/2.1829e39b.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.222abfc7.chunk.js.map": "/web-folio/static/js/3.222abfc7.chunk.js.map",
     "index.html": "/web-folio/index.html",
     "static/css/2.1829e39b.chunk.css.map": "/web-folio/static/css/2.1829e39b.chunk.css.map",
-    "static/css/main.193fa048.chunk.css.map": "/web-folio/static/css/main.193fa048.chunk.css.map",
+    "static/css/main.57409004.chunk.css.map": "/web-folio/static/css/main.57409004.chunk.css.map",
     "static/js/2.01352458.chunk.js.LICENSE.txt": "/web-folio/static/js/2.01352458.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b45694b9.js",
     "static/css/2.1829e39b.chunk.css",
     "static/js/2.01352458.chunk.js",
-    "static/css/main.193fa048.chunk.css",
-    "static/js/main.e7f8b81e.chunk.js"
+    "static/css/main.57409004.chunk.css",
+    "static/js/main.d75d280a.chunk.js"
   ]
 }
