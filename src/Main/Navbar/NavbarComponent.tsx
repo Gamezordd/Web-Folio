@@ -61,7 +61,7 @@ export const NavbarComponent = (props: any) => {
                 const c = document.getElementById('messageBody')?.value;
                 console.log("before");
                 
-                const res = await axios.post('http://localhost:5001/web-folio-d329b/us-central1/verify_reCAPTCHA',{token: token, contact: a, subject: b, message: c});
+                const res = await axios.post('https://us-central1-web-folio-d329b.cloudfunctions.net/verify_reCAPTCHA',{token: token, contact: a, subject: b, message: c});
                 console.log("stat: ", res.status);
                 
                 if(res.data.success){
