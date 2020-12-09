@@ -19,7 +19,7 @@ export const HitCounter = (props: IProps) =>{
             setHits(ss.val());
             setLoading(false);
         });
-    })
+    }, [])
 
     if(isLoading){
         return(

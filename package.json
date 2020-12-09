@@ -1,6 +1,6 @@
 {
   "name": "web-folio",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -13,22 +13,28 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/firebase": "^3.2.1",
     "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.165",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
+    "@types/react": "^17.0.0",
     "@types/react-bootstrap": "^0.32.24",
     "@types/react-dom": "^16.9.8",
+    "@types/react-recaptcha-v3": "^1.1.1",
     "@types/react-vertical-timeline-component": "^3.0.0",
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "firebase": "^8.1.1",
     "firebase-tools": "^8.16.2",
     "gh-pages": "^3.1.0",
+    "lodash": "^4.17.20",
     "node-sass": "^4.0.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-icons": "^3.11.0",
+    "react-recaptcha-v3": "^2.0.1",
     "react-scripts": "4.0.0",
     "react-vertical-timeline-component": "^3.3.1",
+    "sweetalert2": "^10.12.4",
     "typescript": "~4.0.5",
     "web-vitals": "^0.2.4"
   },
@@ -58,5 +64,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://gamezordd.github.io/web-folio"
+  "homepage": "https://gamezordd.github.io/web-folio",
+  "devDependencies": {
+    "@types/react-google-recaptcha": "^2.1.0"
+  }
 }

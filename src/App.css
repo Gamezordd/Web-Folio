@@ -1,9 +1,9 @@
 .App{
   scroll-behavior: smooth;
-  background-color: #1A1A1D;
+  background-color: #0e0e0f;
   font-family: Roboto;
 }
 
 html{
-  background-color: #262626;
+  background-color: #1A1A1D;
 }

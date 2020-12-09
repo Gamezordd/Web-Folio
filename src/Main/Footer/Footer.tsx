@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Jumbotron, Row } from 'react-bootstrap';
 import {RiCopyrightLine, FaGithubSquare} from 'react-icons/all';
+import './styles.css';
 
 export const FooterComponent = () => {
 
     return(
-        <Jumbotron fluid style={{backgroundColor:'#262626'}}>
+        <Jumbotron fluid style={{backgroundColor:'#1A1A1D'}}>
             <Row className='justify-content-center mx-0'>
                 <Col xs={12} lg={4}>
                     <Row className='justify-content-center align-items-center pt-3'>

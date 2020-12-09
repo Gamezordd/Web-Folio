@@ -1,8 +1,7 @@
 .ver-num{
     cursor: context-menu;
-    
 }
 p{
     color: #aaaaaa;
-    margin: 0;
+    margin: 0 !important;
 }

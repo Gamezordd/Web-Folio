@@ -5,11 +5,22 @@ $height: 54px;
 $transition: 0.3s ease-out all;
 
 .conf-text{
-  transform: translate(0, 20%);
+  position: relative;
+  // transform: translate(0, 20%);
   font-size: 1.4rem;
   color: #656566;
-  padding-bottom: 1rem;
+  border: solid;
+  border-color: #646466;
+  border-width: 1px;
+  margin: 18px 0;
+  // padding-top: 1rem;
+  height: 54px;
+  width: 240px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .btn-container {
   display: flex;

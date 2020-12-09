@@ -7,12 +7,12 @@ import { BeerComponent } from "./Subcomponents/BeerWide";
 export const HeaderComponent = () => {
 
     return(
-        <Jumbotron fluid style={{backgroundColor: "#1A1A1D"}}>
+        <Jumbotron fluid style={{backgroundColor: "#111112"}}>
             <Row className="mx-0">
                 <Col xs={12} md={9}>
                     <Row className="pl-5 pr-2">
-                        <h1 style={{height:"5rem", color:"#C3073F"}}>
-                            <div id='typewrite' data-period="2000" data-type='[ "Hi, Im Amartya.", "Im A Coder.", "I Am A Bodybuilder.", "I Like Solving Problems.","I Like Building Things."]'>
+                        <h1 style={{height:"5.4rem", color:"#C3073F"}}>
+                            <div id='typewrite' data-period="2000" data-type='[ "Hi, I Am Amartya.", "I Am A Coder.", "I Am A Fitness Enthusiast.", "I Like Solving Problems.","I Like Building Things."]'>
                                 <span className="wrap"></span>
                             </div>
                         </h1>
@@ -29,9 +29,10 @@ export const HeaderComponent = () => {
                 </Col>
                 <Col xs={12} md={3}>
                     <div className='image-wrapper'/>
-                    <Row className='justify-content-center'>
+                    <Row style={{height: '100%'}} className='justify-content-center align-items-center'>
                         <img className='header-image' src='https://media-exp1.licdn.com/dms/image/C5103AQFT0Iq52dzUtw/profile-displayphoto-shrink_400_400/0?e=1611187200&v=beta&t=n9RgIyO4Vrl-40Iv-K0WQP9-tvHDwwLrbNe43SbqbQc' alt='profileimg'/>
                     </Row>
+                    <div className='image-wrapper'/>
                 </Col>
             </Row>
         </Jumbotron>

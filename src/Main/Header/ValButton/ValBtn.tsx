@@ -29,7 +29,7 @@ export const Btn = (props: IProps) => {
         if(wavcurr === '1'){
             setWaved(true);
         }
-    })
+    }, [])
 
     if(waved){
         

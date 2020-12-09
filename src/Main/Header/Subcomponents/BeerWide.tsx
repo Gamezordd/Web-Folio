@@ -13,7 +13,7 @@ export const BeerComponent = () => {
                 <Row className='justify-content-center align-items-center'>
                     <ValBtn text='say hi!'/>
                 </Row>
-                <Row className='justify-content-center'>
+                <Row className='justify-content-center '>
                     <IoIosBeer color='white' size={40}/>
                     <HitCounter class='hi-counter'/>
                 </Row>
