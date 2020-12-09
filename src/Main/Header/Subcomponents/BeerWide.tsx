@@ -11,7 +11,7 @@ export const BeerComponent = () => {
         return(
             <Col>
                 <Row className='justify-content-center align-items-center'>
-                    <ValBtn text='say hi!'/>
+                    <ValBtn text='say hi 👋'/>
                 </Row>
                 <Row className='justify-content-center '>
                     <IoIosBeer color='white' size={40}/>
@@ -23,7 +23,7 @@ export const BeerComponent = () => {
     else{
         return(
             <Row style={{paddingLeft: '3rem'}} className='align-items-center'>
-                <ValBtn text='say hi!'/>
+                <ValBtn text='say hi 👋'/>
                 <HitCounter class='hi-counter' />
                 <IoIosBeer className='hi-icon' color='white' size={40}/>
             </Row>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row, Spinner } from 'react-bootstrap';
+import { Button, Col, Row, Spinner } from 'react-bootstrap';
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import firebase from '../../Firebase/firebase';
@@ -93,26 +93,32 @@ export const Exp = () => {
     }
 
     return (
-        <Row className='justify-content-around mx-0'>
-            <Col xs={10} lg={4}>
-                <h3 style={{color:"#ffffff", paddingTop: '30px'}}>Experience</h3>
-                <VerticalTimeline
-                    className='custom-timeline'
-                    layout="1-column"
-                >
-                    {populateExp()}
-                </VerticalTimeline>
-            </Col>
-            <Col xs={10} lg={4}>
-                <h3 style={{color:"#ffffff", paddingTop: '30px'}}>Projects</h3>
-                <VerticalTimeline
-                    className='custom-timeline'
-                    //@ts-ignore
-                    layout="1-column-right"
-                >
-                    {populateEdu()}
-                </VerticalTimeline>
-            </Col>
-        </Row>
+        <div>
+            <Row className='justify-content-around mx-0'>
+                <Col xs={10} lg={4}>
+                    <h3 style={{color:"#ffffff", paddingTop: '30px'}}>Experience</h3>
+                    <VerticalTimeline
+                        className='custom-timeline'
+                        layout="1-column"
+                    >
+                        {populateExp()}
+                    </VerticalTimeline>
+                </Col>
+                <Col xs={10} lg={4}>
+                    <h3 style={{color:"#ffffff", paddingTop: '30px'}}>Projects</h3>
+                    <VerticalTimeline
+                        className='custom-timeline'
+                        //@ts-ignore
+                        layout="1-column-right"
+                    >
+                        {populateEdu()}
+                    </VerticalTimeline>
+                </Col>
+            </Row>
+            <Row className='justify-content-center align-items-center p-4'>
+                <Button style={{backgroundColor:"#950740", borderColor: '#950740'}}>Download CV</Button>
+            </Row>
+        </div>
+        
     )
 }

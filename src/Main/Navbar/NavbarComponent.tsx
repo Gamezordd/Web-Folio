@@ -160,10 +160,10 @@ export const NavbarComponent = (props: any) => {
             <Navbar className='justify-content-between' sticky="top" style={{backgroundColor: "#1A1A1D"}}>
                 <Navbar.Brand><div style={{color:"#C3073F"}}>Amartya Mishra</div></Navbar.Brand>
                 <NavDropdown alignRight id='menu-btn' title="Menu">
-                    <NavDropdown.Item onClick={() => {window.open('https://1drv.ms/b/s!Akkr1QYilOQMicl_cFCz16x1wC_Gdg?e=Vd4cOc')}}>View Resume</NavDropdown.Item>
-                    <NavDropdown.Item onClick={() => setControl({...control, contactModal: true})}>Say Something</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => {window.open('https://1drv.ms/b/s!Akkr1QYilOQMicl_cFCz16x1wC_Gdg?e=UJIaD7')}}>View Resume</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setControl({...control, contactModal: true})}>Send Message</NavDropdown.Item>
                     <NavDropdown.Divider style={{backgroundColor: '#00000030'}} />
-                    <p className='ver-num px-4'>v0.1.4</p>
+                    <p className='ver-num px-4'>v0.1.7</p>
                 </NavDropdown>
             </Navbar>
             {ContactModal()}

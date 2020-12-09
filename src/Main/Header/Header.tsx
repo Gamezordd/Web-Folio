@@ -12,17 +12,18 @@ export const HeaderComponent = () => {
                 <Col xs={12} md={9}>
                     <Row className="pl-5 pr-2">
                         <h1 style={{height:"5.4rem", color:"#C3073F"}}>
-                            <div id='typewrite' data-period="2000" data-type='[ "Hi, I Am Amartya.", "I Am A Coder.", "I Am A Fitness Enthusiast.", "I Like Solving Problems.","I Like Building Things."]'>
+                            <div id='typewrite' data-period="2000" data-type='[ "Hi, I Am Amartya.", "I Am A Software Developer.", "I Am A Fitness Enthusiast.", "I Like Solving Problems.","I Like Building Things."]'>
                                 <span className="wrap"></span>
                             </div>
                         </h1>
                     </Row>
-                    <Row className="pt-5 px-3 pl-5">
+                    <Row className={`pt-5 ${window.innerWidth > 800 ? 'px-3 pl-5' : ''}`}>
                         <p style={{color: "white", fontWeight:'lighter', fontSize:"1.3rem"}}>
-                            Welcome to my portfolio. Scroll down to learn more about what I do.
+                            Hi, scroll down to learn more about what I do or shoot me a message using the option in the menu.
                         </p>
-                        <p style={{color: "white", fontWeight:'lighter', fontSize:"1.3rem"}}>
-                            Don't forget to say hi or hesitate to shoot me a message if you have any questions.
+                        <p style={{color: "white", fontWeight:'lighter', fontSize:"1.3rem", paddingTop:"1rem", paddingBottom:'1rem'}}>
+                            Hi, I am a Software Developer with love for all of technology primarily experienced in MERN Stack development.
+                            However, I have expanded my skillset over the years to include various other databases, frameworks and libraries.
                         </p>
                     </Row>
                     <BeerComponent/>
