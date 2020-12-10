@@ -10,14 +10,14 @@ export const HeaderComponent = () => {
         <Jumbotron fluid style={{backgroundColor: "#111112"}}>
             <Row className="mx-0">
                 <Col xs={12} md={9}>
-                    <Row className="pl-5 pr-2">
+                    <Row className={`${window.innerWidth > 801 ? 'pl-5 pr-2' : ''}`}>
                         <h1 style={{height:"5.4rem", color:"#C3073F"}}>
                             <div id='typewrite' data-period="2000" data-type='[ "Hi, I Am Amartya.", "I Am A Software Developer.", "I Am A Fitness Enthusiast.", "I Like Solving Problems.","I Like Building Things."]'>
                                 <span className="wrap"></span>
                             </div>
                         </h1>
                     </Row>
-                    <Row className={`pt-5 ${window.innerWidth > 800 ? 'px-3 pl-5' : ''}`}>
+                    <Row className={`pt-2 ${window.innerWidth > 801 ? 'px-3 pl-5' : ''}`}>
                         <p style={{color: "white", fontWeight:'lighter', fontSize:"1.3rem"}}>
                             Hi, scroll down to learn more about what I do or shoot me a message using the option in the menu.
                         </p>

@@ -1,9 +1,31 @@
 .App{
-  scroll-behavior: smooth;
+  
+  
   background-color: #0e0e0f;
   font-family: Roboto;
 }
 
 html{
   background-color: #1A1A1D;
+  scrollbar-width: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e0e0f; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4e4e50; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5f5f63; 
 }
