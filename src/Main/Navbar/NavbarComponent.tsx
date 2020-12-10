@@ -51,7 +51,7 @@ export const NavbarComponent = (props: any) => {
 
         const handleCaptcha = async (token : string | null) => {
             try {
-                if(!isFilled || !token) return;
+                if(!isFilled() || !token) return;
                 // console.log(token);
                     //@ts-ignore
                 const a = document.getElementById('contact')?.value;
@@ -59,10 +59,8 @@ export const NavbarComponent = (props: any) => {
                 const b = document.getElementById('subject')?.value;
                 //@ts-ignore
                 const c = document.getElementById('messageBody')?.value;
-                console.log("before");
-                
                 const res = await axios.post('https://us-central1-web-folio-d329b.cloudfunctions.net/verify_reCAPTCHA',{token: token, contact: a, subject: b, message: c});
-                console.log("stat: ", res.status);
+                // console.log("stat: ", res.status);
                 
                 if(res.data.success){
                     setControl({...control, contactModal: false});
@@ -73,12 +71,12 @@ export const NavbarComponent = (props: any) => {
                     );
                 }
                 else{
-                    
+                    throw new Error('Invalid Response from Google.')
                 }
                 setLoading(false);
                 return;
             } catch (err) {
-                console.log(err);
+                console.error(err);
                 // console.log(res.data);
                 setLoading(false);
                 Swal.fire(
@@ -146,6 +144,7 @@ export const NavbarComponent = (props: any) => {
                         <FormGroup>
                             <Row className='align-items-center px-3'>
                                 <Button disabled={control.buttonDisable} onClick={() => updateToken()} style={{marginRight: '1rem', backgroundColor: '#C3073F', borderColor:'#C3073F' }}>Send</Button>
+                                <a onClick={() => setControl({...control, contactModal: false})} href='#' className='mr-3'>Cancel</a>
                                 {isLoading ? <Spinner style={{color: '#C3073F'}} animation='border'/> : null}
                             </Row>
                         </FormGroup>
