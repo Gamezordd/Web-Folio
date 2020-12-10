@@ -115,7 +115,7 @@ export const Exp = () => {
                     </VerticalTimeline>
                 </Col>
             </Row>
-            <Row className='justify-content-center align-items-center p-4'>
+            <Row className='justify-content-center align-items-center p-4 mx-0'>
                 <Button style={{backgroundColor:"#950740", borderColor: '#950740'}}>Download CV</Button>
             </Row>
         </div>
