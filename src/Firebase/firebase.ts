@@ -21,5 +21,8 @@ export default {
         currVal++;
         db.ref('hits/').set(currVal);
         return;
+    },
+    fetchCV(){
+        return db.ref('CVlink/').once('value');
     }
 }

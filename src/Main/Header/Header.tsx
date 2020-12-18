@@ -22,7 +22,7 @@ export const HeaderComponent = () => {
                             Hi, scroll down to learn more about what I do or shoot me a message using the option in the menu.
                         </p>
                         <p style={{color: "white", fontWeight:'lighter', fontSize:"1.3rem", paddingTop:"1rem", paddingBottom:'1rem'}}>
-                            Hi, I am a Software Developer with love for all of technology primarily experienced in MERN Stack development.
+                            I am a Software Developer with love for all of technology primarily experienced in MERN Stack development.
                             However, I have expanded my skillset over the years to include various other databases, frameworks and libraries.
                         </p>
                     </Row>

@@ -8,8 +8,11 @@ import Swal from 'sweetalert2';
 import './styles.css';
 
 const initialState = {contactModal: false, success: false, buttonDisable: true};
+interface IProps{
+    CVlink: null|string
+}
 
-export const NavbarComponent = (props: any) => {
+export const NavbarComponent = (props: IProps) => {
     const [control, setControl] = useState(initialState);
     const [formError, setError] = useState(false);
     const [isLoading, setLoading] = useState(false);
@@ -143,7 +146,7 @@ export const NavbarComponent = (props: any) => {
                         </FormGroup>
                         <FormGroup>
                             <Row className='align-items-center px-3'>
-                                <Button disabled={control.buttonDisable} onClick={() => updateToken()} style={{marginRight: '1rem', backgroundColor: '#C3073F', borderColor:'#C3073F' }}>Send</Button>
+                                <Button disabled={control.buttonDisable} onClick={() => updateToken()} className='okbtn2'>Send</Button>
                                 <a onClick={() => setControl({...control, contactModal: false})} href='#' className='mr-3'>Cancel</a>
                                 {isLoading ? <Spinner style={{color: '#C3073F'}} animation='border'/> : null}
                             </Row>
@@ -159,10 +162,10 @@ export const NavbarComponent = (props: any) => {
             <Navbar className='justify-content-between' sticky="top" style={{backgroundColor: "#1A1A1D"}}>
                 <Navbar.Brand><div style={{color:"#C3073F"}}>Amartya Mishra</div></Navbar.Brand>
                 <NavDropdown alignRight id='menu-btn' title="Menu">
-                    <NavDropdown.Item onClick={() => {window.open('https://1drv.ms/b/s!Akkr1QYilOQMicl_cFCz16x1wC_Gdg?e=UJIaD7')}}>View Resume</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => {if(props.CVlink) window.open(props.CVlink)}}>View Resume</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => setControl({...control, contactModal: true})}>Send Message</NavDropdown.Item>
                     <NavDropdown.Divider style={{backgroundColor: '#00000030'}} />
-                    <p className='ver-num px-4'>v0.1.7</p>
+                    <p className='ver-num px-4'>v0.1.9</p>
                 </NavDropdown>
             </Navbar>
             {ContactModal()}

@@ -5,3 +5,14 @@ p{
     color: #aaaaaa;
     margin: 0 !important;
 }
+
+.okbtn2{
+    margin-right: 1rem;
+    background-color: #C3073F !important;
+    border-color: #C3073F !important;
+}
+
+.okbtn2:focus{
+    box-shadow:0 0 5px 2px #C3073FAF !important;
+    outline:0px !important;
+}

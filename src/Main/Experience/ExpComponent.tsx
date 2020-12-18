@@ -7,7 +7,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import './styles.css'
 
-export const Exp = () => {
+interface IProps{
+    CVlink : null | string
+}
+export const Exp = (props : IProps) => {
     const [exp, setExp] = useState<any>(undefined);
     const [edu, setEdu] = useState<any>(undefined);
     const [isLoading, setLoading] = useState(true);
@@ -116,7 +119,7 @@ export const Exp = () => {
                 </Col>
             </Row>
             <Row className='justify-content-center align-items-center p-4 mx-0'>
-                <Button style={{backgroundColor:"#950740", borderColor: '#950740'}}>Download CV</Button>
+                <Button onClick={() => {if(props.CVlink) window.open(props.CVlink)}} className='okbtn' style={{backgroundColor:"#950740", borderColor: '#950740'}}>Download CV</Button>
             </Row>
         </div>
         
