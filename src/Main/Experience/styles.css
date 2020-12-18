@@ -68,3 +68,10 @@
     box-shadow:0 0 5px 2px #950740AF !important;
     outline:0px !important;
 }
+
+.exp-link{
+    color: #3a97fc;
+}
+.exp-link:hover{
+    color:#3a97fc;
+}

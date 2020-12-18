@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useRef, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { Button, Form, FormGroup, FormLabel, Modal, ModalBody, Nav, Navbar, NavDropdown, Row, Spinner } from 'react-bootstrap';
 import {loadReCaptcha, ReCaptcha} from 'react-recaptcha-v3';
 import {reCAPTCHA_SITE_KEY} from '../../constants';

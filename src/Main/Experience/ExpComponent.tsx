@@ -43,7 +43,7 @@ export const Exp = (props : IProps) => {
                         icon={<FontAwesomeIcon className='timeline-icon-fine-exp' icon={faBriefcase}/>}
                         onTimelineElementClick={() => {if(exp[e]?.link) {window.open(`${exp[e].link}`)}}}
                     >
-                        {exp[e]?.link ? <u><h6>{e}</h6></u> : <h6>{e}</h6>}
+                        {exp[e]?.link ? <a href="#" className='exp-link'><h6>{e}</h6></a> : <h6>{e}</h6>}
                         <p style={{fontSize: '0.8rem', color: exp[e].fontColor}}>
                             {exp[e].description}
                         </p>
@@ -67,7 +67,7 @@ export const Exp = (props : IProps) => {
                         icon={<FontAwesomeIcon className='timeline-icon-fine-pro' icon={faBriefcase}/>}
                         onTimelineElementClick={() => {if(edu[e]?.link) {window.open(`${edu[e].link}`)}}}
                     >
-                        {edu[e]?.link ? <u><h6>{e}</h6></u> : <h6>{e}</h6>}
+                        {edu[e]?.link ? <a className="exp-link" href="#"><h6>{e}</h6></a> : <h6>{e}</h6>}
                         
                         <p style={{fontSize: '0.8rem', color: edu[e].fontColor}}>
                             {edu[e].description}
