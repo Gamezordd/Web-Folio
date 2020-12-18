@@ -17,7 +17,7 @@ export const HeaderComponent = () => {
                             </div>
                         </h1>
                     </Row>
-                    <Row className={`pt-2 ${window.innerWidth > 801 ? 'px-3 pl-5' : ''}`}>
+                    <Row className={`pt-5 ${window.innerWidth > 801 ? 'px-3 pl-5' : ''}`}>
                         <p style={{color: "white", fontWeight:'lighter', fontSize:"1.3rem"}}>
                             Hi, scroll down to learn more about what I do or shoot me a message using the option in the menu.
                         </p>
