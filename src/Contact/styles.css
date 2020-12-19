@@ -2,7 +2,6 @@
     height: 55px;
     width: 10rem;
     position: fixed;
-    bottom:78px;
     right: 0rem;
     background-color: #C3073F30;
     transform: translate(90px,0);
@@ -10,6 +9,16 @@
     color: #C3073F30;
     transition: 0.5s;
     cursor: context-menu;
+}
+@media (max-width: 800px){
+    .rect-big{
+        bottom: 14px;
+    }
+}
+@media (min-width: 801px){
+    .rect-big{
+        bottom: 78px;
+    }
 }
 .rect-big:hover{
     transform: translate(2px,0);
@@ -26,5 +35,5 @@
 }
 
 .cont-text{
-    transform: translate(0,8px);
+    transform: translate(0,4px);
 }

@@ -169,7 +169,7 @@ export const Contact = () => {
                     </Col>
                     <Col xs='7'>
                         <Row onClick={() => setControl({...control, contactModal: true})} style={{height: "100%"}} className='cont-text'>
-                            <u>Email Me!</u>
+                            Email Me!
                         </Row>
                     </Col>
                     <Col>
