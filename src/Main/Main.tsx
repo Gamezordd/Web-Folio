@@ -13,9 +13,15 @@ export const Main = (props: any) => {
         setCV(res.val());
     }
 
+    const updateUserCount = async () => {
+        await firebase.incrementUserCount();
+    }
+
     useEffect(() => {
         getCV();
-    })
+        updateUserCount();
+    },[]);
+    
     return(
         <div>
             <Navbar CVlink={CVlink}/>

@@ -24,5 +24,10 @@ export default {
     },
     fetchCV(){
         return db.ref('CVlink/').once('value');
+    },
+    async incrementUserCount(){
+        const count = await db.ref('visits/').once('value');
+        await db.ref('visits/').set(count.val() + 1);
+        return;
     }
 }
