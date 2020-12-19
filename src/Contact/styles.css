@@ -4,23 +4,27 @@
     position: fixed;
     bottom:78px;
     right: 0rem;
-    background-color: #C3073F;
+    background-color: #C3073F30;
     transform: translate(90px,0);
-    box-shadow: 0 0 3px 1px #C3073FAA;
-    color: #C3073F;
+    box-shadow: 0 0 3px 1px #C3073F30;
+    color: #C3073F30;
     transition: 0.5s;
     cursor: context-menu;
 }
 .rect-big:hover{
     transform: translate(2px,0);
     color: white;
+    background-color: #690020;
 }
-
+.rect-big:focus{
+    transform: translate(90px,0);
+    color: #C3073F30;
+}
 .cont-icn{
     color: white !important;
     transform: translate(0,4px);
 }
 
 .cont-text{
-    transform: translate(0,4px);
+    transform: translate(0,8px);
 }

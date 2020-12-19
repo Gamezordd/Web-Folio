@@ -8,6 +8,22 @@ html{
   scrollbar-width: 0px;
 }
 
+.grecaptcha-badge{
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+.grecaptcha-badge:hover{
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 800px){
+  .grecaptcha-badge{
+    display: none !important;
+  }
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;

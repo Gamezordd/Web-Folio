@@ -9,6 +9,7 @@ import {Spinner, Button, Form, FormGroup, FormLabel, Modal, ModalBody} from 'rea
 import _ from 'lodash';
 
 import './styles.css';
+import ModalHeader from 'react-bootstrap/esm/ModalHeader';
 const initialState = {contactModal: false, success: false, buttonDisable: true};
 
 export const Contact = () => {
@@ -92,7 +93,7 @@ export const Contact = () => {
         const renderMessage = () => {
             if(!formError){
                 return(
-                    <p>All fields are mandatory.</p>
+                    <p>All fields are mandatory. {window.innerWidth > 801 ? '' : 'Secured by ReCAPTCHA.'}</p>
                 )
             }
             else if(!isLoading){
@@ -118,6 +119,7 @@ export const Contact = () => {
 
         return(
             <Modal show={control.contactModal} onHide={() => {setControl(initialState)}}>
+                <ModalHeader className='pl-3 pt-2 pb-0'><h5>Get In Touch</h5></ModalHeader>
                 <ModalBody>
                     <Form>
                         <FormGroup>
@@ -155,9 +157,10 @@ export const Contact = () => {
             </Modal>
         )
     }
+
     return(
         <Fragment>
-            <div onClick={() => setControl({...control, contactModal: true})} className='rect-big'>
+            <div  className='rect-big'>
                 <Row style={{height: "100%"}} className='align-items-center mx-0 px-1'>
                     <Col xs='5'>
                         <Row style={{height: "100%"}} className='justify-content-center align-items-center'>
@@ -165,8 +168,8 @@ export const Contact = () => {
                         </Row>
                     </Col>
                     <Col xs='7'>
-                        <Row style={{height: "100%"}} className='align-items-center cont-text'>
-                            Email Me!
+                        <Row onClick={() => setControl({...control, contactModal: true})} style={{height: "100%"}} className='cont-text'>
+                            <u>Email Me!</u>
                         </Row>
                     </Col>
                     <Col>
