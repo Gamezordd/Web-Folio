@@ -41,17 +41,13 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-export function animateTypewrite() {
-    
-}
-    
-    
 
 window.onload = () => 
 {
     // INJECT CSS
-    console.log("inserter");
+    // console.log("inserter");
     var elements = document.getElementById('typewrite');
+    if(!elements) return;
     var toRotate = elements.getAttribute('data-type');
     var period = elements.getAttribute('data-period');
     if (toRotate) {
